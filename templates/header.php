@@ -1,5 +1,7 @@
 <?php
 include_once("helpers/url.php");
+include_once("data/posts.php");
+include_once("data/categories.php");
 ?>
 
 <!DOCTYPE html>
@@ -23,11 +25,11 @@ include_once("helpers/url.php");
             <img src="<?= $BASE_URL ?>/img/logo.svg" alt="Blog Codar">
         </a>
         <nav>
-            <ul> 
-                <li><a href="<?= $BASE_URL?>">Home</a></li>
-                <li><a href="<?= $BASE_URL?>/contato.php">Contato</a></li>
-                <li><a href="<?= $BASE_URL?>/categorias.php">Categorias</a></li>
-                <li><a href="<?= $BASE_URL?>/sobre.php"></a>Sobre</li>
+            <ul id="navbar"> 
+                <li><a href="<?= $BASE_URL?>" class="nav-link">Home</a></li>
+                <li><a href="<?= $BASE_URL?>contato.php" class="nav-link">Contato</a></li>
+                <li><a href="<?= $BASE_URL?>categorias.php" class="nav-link">Categorias</a></li>
+                <li><a href="<?= $BASE_URL?>sobre.php" class="nav-link"></a>Sobre</li>
             </ul>
         </nav>
     </header>
